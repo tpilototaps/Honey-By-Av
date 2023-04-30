@@ -1,56 +1,155 @@
-.hero{
-    background: url(https://64.media.tumblr.com/c6c6eda9f2910e6c8ed85b24451b7225/106b990ec769f16c-5d/s400x600/c1a9a816f91bdc39e4753d86ffbc1378d0f320ed.jpg)no-repeat fixed;
-    background-size: contain;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-}
 
 @media (max-width: 1000px) {
     .hero{
         background: url(https://64.media.tumblr.com/c6c6eda9f2910e6c8ed85b24451b7225/106b990ec769f16c-5d/s400x600/c1a9a816f91bdc39e4753d86ffbc1378d0f320ed.jpg) no-repeat fixed;
         background-size: cover;
-        background-attachment: fixed;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 100%;     
+        width: 100%;   
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .honey-jar{
+        width: 60px;
+    }
+    .spacer{
+        height: 100vh;
     }
     .hero-img{
         width: 100%;
+        margin-top: 30%;
+        position: fixed;
+        z-index: -10;
+        backface-visibility: visible !important;
+        animation: flip 2s ease 1;
+    }
+    @keyframes flip {
+        0% {
+            transform: perspective(400px) rotateY(0);
+            animation-timing-function: ease-out;
+        }
+        40% {
+            transform: perspective(400px) translateZ(150px) rotateY(170deg);
+            animation-timing-function: ease-out;
+        }
+        50% {
+            transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+            animation-timing-function: ease-in;
+        }
+        80% {
+            transform: perspective(400px) rotateY(360deg) scale(1);
+            animation-timing-function: ease-in;
+        }
+        100% {
+            transform: perspective(400px) scale(1);
+            animation-timing-function: ease-in;
+        }
     }
     .feed{
+        background: url('https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png');
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column;      
+    }
+    .feed-container{
+        background-color: aliceblue
     }
     .honey-shots{
         width: 100%;
         margin-bottom: 10px;
         border-radius: 10px;
+        animation: pulse 2s infinite ease-in-out alternate;
+    }
+      @keyframes pulse {
+        from { transform: scale(0.98); }
+        to { transform: scale(1); }
     }
 }
 
 @media (min-width:1000px) {
+    .main-body{
+        margin-left: 35%;
+        margin-right: 35%
+    }
     .hero{
-        background: url(https://64.media.tumblr.com/c6c6eda9f2910e6c8ed85b24451b7225/106b990ec769f16c-5d/s400x600/c1a9a816f91bdc39e4753d86ffbc1378d0f320ed.jpg)no-repeat fixed;
-        background-size: cover;
+        background: url(https://64.media.tumblr.com/c6c6eda9f2910e6c8ed85b24451b7225/106b990ec769f16c-5d/s400x600/c1a9a816f91bdc39e4753d86ffbc1378d0f320ed.jpg) no-repeat fixed;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 100%;     
+        width: 100%;   
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .spacer{
+        height: 100vh;
+    }
+    .hero-img{
+        position: fixed;
+        z-index: -10;
+        backface-visibility: visible !important;
+        animation: flip 2s ease 1;
+    }
+    @keyframes flip {
+        0% {
+            transform: perspective(400px) rotateY(0);
+            animation-timing-function: ease-out;
+        }
+        40% {
+            transform: perspective(400px) translateZ(150px) rotateY(170deg);
+            animation-timing-function: ease-out;
+        }
+        50% {
+            transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+            animation-timing-function: ease-in;
+        }
+        80% {
+            transform: perspective(400px) rotateY(360deg) scale(1);
+            animation-timing-function: ease-in;
+        }
+        100% {
+            transform: perspective(400px) scale(1);
+            animation-timing-function: ease-in;
+        }
     }
     .feed{
+        background: url('https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png');
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column;      
     }
-    .honey-give{
+    .feed-container{
+        background-color: aliceblue
+    }
+    .honey-shots{
         width: 100%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        animation: pulse 2s infinite ease-in-out alternate;
+    }
+
+      @keyframes pulse {
+        from { transform: scale(0.98); }
+        to { transform: scale(1); }
     }
 }
