@@ -27,15 +27,15 @@
     }
 
     .spacer{
-        height: 100vh;
+        height: 90vh;
     }
     .hero-img{
         width: 100%;
         margin-top: 30%;
         position: fixed;
         z-index: -10;
-        backface-visibility: visible !important;
-        animation: flip 2s ease 1;
+        /* backface-visibility: visible !important; */
+        /* animation: flip 2s ease 1; */
     }
     @keyframes flip {
         0% {
@@ -75,7 +75,7 @@
         animation: pulse 2s infinite ease-in-out alternate;
     }
       @keyframes pulse {
-        from { transform: scale(0.98); }
+        from { transform: scale(0.97); }
         to { transform: scale(1); }
     }
 }
