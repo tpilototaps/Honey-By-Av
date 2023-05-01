@@ -34,30 +34,7 @@
         margin-top: 30%;
         position: fixed;
         z-index: -10;
-        /* backface-visibility: visible !important; */
-        /* animation: flip 2s ease 1; */
-    }
-    @keyframes flip {
-        0% {
-            transform: perspective(7000px) rotateY(0);
-            animation-timing-function: ease-out;
-        }
-        40% {
-            transform: perspective(7000px) translateZ(150px) rotateY(170deg);
-            animation-timing-function: ease-out;
-        }
-        50% {
-            transform: perspective(7000px) translateZ(150px) rotateY(190deg);
-            animation-timing-function: ease-in;
-        }
-        80% {
-            transform: perspective(7000px) rotateY(360deg);
-            animation-timing-function: ease-in;
-        }
-        100% {
-            transform: perspective(7000px);
-            animation-timing-function: ease-in;
-        }
+       
     }
     .feed{
         background: url('https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png');
